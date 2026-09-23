@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Big Truck Burger · بيغ تراك برغر | Damascus</title>
+  <meta name="description" content="Big Truck Burger, Damascus. Fire-grilled double smash burgers, tenders and more. STOP... It's Burger Time." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta property="og:title" content="Big Truck Burger · Damascus" />
+  <meta property="og:description" content="STOP... It's Burger Time. Fire-grilled burgers in Damascus." />
+  <meta property="og:image" content="/bigtruck-burger/brand/logo-fb.jpg" />
+  <link rel="icon" href="/bigtruck-burger/brand/logo-ig.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@400;600;700;900&family=Lalezar&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/bigtruck-burger/assets/index-BdritH7_.js"></script>
+  <link rel="stylesheet" crossorigin href="/bigtruck-burger/assets/index-0de2nFc7.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="/bigtruck-burger/brand/logo-ig.jpg" alt="" width="96" height="96" />
+  <div class="loader-bar"><span></span></div>
+  <p data-i18n="loader"></p>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" aria-label="Big Truck Burger">
+    <img src="/bigtruck-burger/brand/logo-ig.jpg" alt="" width="44" height="44" />
+    <span>BIG TRUCK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#build" data-i18n="nav.build"></a>
+    <a href="#menu" data-i18n="nav.menu"></a>
+    <a href="#visit" data-i18n="nav.visit"></a>
+  </nav>
+  <div class="nav-actions">
+    <button class="lang" id="langToggle" type="button" aria-label="Switch language">EN</button>
+    <a class="btn btn-red btn-sm" href="tel:0995022223" data-i18n="nav.order"></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas class="embers" id="embers" aria-hidden="true"></canvas>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="hero.kicker"></p>
+        <h1 class="hero-title">
+          <span class="line"><span data-i18n-html="hero.line1"></span></span>
+          <span class="line"><span data-i18n="hero.line2"></span></span>
+          <span class="line accent"><span data-i18n="hero.line3"></span></span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub"></p>
+        <div class="hero-ctas">
+          <a class="btn btn-red" href="#menu" data-i18n="hero.cta1"></a>
+          <a class="btn btn-ghost" href="#build" data-i18n="hero.cta2"></a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <div class="badge-ring" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
+            <text><textPath href="#circ">STOP... IT'S BURGER TIME ★ PREMIUM QUALITY ★ DAMASCUS ★</textPath></text></svg>
+        </div>
+        <img src="/bigtruck-burger/brand/logo-fb.jpg" alt="Big Truck Burger logo" width="720" height="720" />
+      </div>
+    </div>
+    <a class="scroll-cue" href="#build"><span data-i18n="hero.scroll"></span><i></i></a>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+  <!-- BUILD: scroll-driven burger assembly -->
+  <section class="build" id="build">
+    <div class="build-pin">
+      <div class="build-bg-word" aria-hidden="true">BURGER</div>
+      <div class="build-head">
+        <p class="kicker" data-i18n="build.kicker"></p>
+        <h2 class="section-title" data-i18n="build.title"></h2>
+      </div>
+      <div class="burger-stage" id="burgerStage"></div>
+      <div class="build-steps">
+        <div class="step">
+          <span class="step-num" id="stepNum">01</span>
+          <div class="step-text">
+            <h3 id="stepTitle"></h3>
+            <p id="stepDesc"></p>
+          </div>
+        </div>
+        <ol class="step-dots" id="stepDots" aria-hidden="true"></ol>
+      </div>
+      <div class="build-done" id="buildDone" data-i18n="build.done"></div>
+    </div>
+  </section>
+
+  <!-- ROAD -->
+  <section class="road">
+    <div class="road-copy">
+      <h2 class="section-title" data-i18n-html="road.title"></h2>
+      <p data-i18n="road.text"></p>
+    </div>
+    <div class="road-scene">
+      <div class="truck" id="truck"></div>
+      <div class="asphalt"><div class="lane" id="lane"></div></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="28" data-suffix="K+">0</b><span data-i18n="stat.followers"></span></div>
+      <div class="stat"><b data-count="500" data-suffix="+">0</b><span data-i18n="stat.posts"></span></div>
+      <div class="stat"><b data-count="10">0</b><span data-i18n="stat.hours"></span></div>
+      <div class="stat"><b data-count="2">0</b><span data-i18n="stat.branches"></span></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="checker" aria-hidden="true"></div>
+    <div class="container">
+      <p class="kicker" data-i18n="menu.kicker"></p>
+      <h2 class="section-title" data-i18n="menu.title"></h2>
+      <div class="tabs" role="tablist" id="menuTabs">
+        <button role="tab" data-tab="burgers" aria-selected="true" data-i18n="menu.burgers"></button>
+        <button role="tab" data-tab="chicken" aria-selected="false" data-i18n="menu.chicken"></button>
+        <button role="tab" data-tab="starters" aria-selected="false" data-i18n="menu.starters"></button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <p class="menu-note" data-i18n="menu.note"></p>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="container">
+      <p class="kicker" data-i18n="visit.kicker"></p>
+      <h2 class="section-title" data-i18n="visit.title"></h2>
+      <p class="hours"><span class="live-dot" id="liveDot"></span><span data-i18n="visit.hours"></span></p>
+      <div class="branches" id="branches"></div>
+      <div class="phones" id="phones"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <canvas class="embers" id="embers2" aria-hidden="true"></canvas>
+    <div class="container">
+      <h2 class="cta-title" data-i18n="cta.title"></h2>
+      <p data-i18n="cta.text"></p>
+      <div class="hero-ctas center">
+        <a class="btn btn-red" href="tel:0995022223" data-i18n="visit.call"></a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/bigtruckburger/" target="_blank" rel="noopener" data-i18n="cta.follow"></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="/bigtruck-burger/brand/logo-ig.jpg" alt="" width="56" height="56" />
+  <p data-i18n="footer.rights"></p>
+  <div class="socials">
+    <a href="https://www.instagram.com/bigtruckburger/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/bigtruckburger/" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <small>© <span id="year"></span></small>
+</footer>
+
+</body>
+</html>
