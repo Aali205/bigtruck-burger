@@ -1,0 +1,146 @@
+// All copy lives here, in both languages.
+// Facts (branches, phones, hours, follower counts, known menu items) come from
+// the public Instagram / Facebook pages and the "This is Dimashq" write-up.
+
+export const CONTACT = {
+  phones: ['0995022223', '0113318585', '0113318584'],
+  instagram: 'https://www.instagram.com/bigtruckburger/',
+  facebook: 'https://www.facebook.com/bigtruckburger/',
+};
+
+export const BUILD_STEPS = [
+  { en: ['Toasted Bun', 'Buttered and kissed by the flat-top until golden.'], ar: ['خبز محمّص', 'مدهون بالزبدة ومحمّص عالصاج لحتى يصير ذهبي.'] },
+  { en: ['Crisp Lettuce', 'Cold, fresh and loud when you bite it.'], ar: ['خس مقرمش', 'بارد وطازج، بتسمع صوته مع أول عضة.'] },
+  { en: ['Beef Patty', 'Fresh beef, smashed hard on a screaming-hot grill.'], ar: ['قطعة لحم', 'لحم طازج بينكبس عالشواية وهي نار.'] },
+  { en: ['Melted Cheese', 'Laid on while the patty is still sizzling.'], ar: ['جبنة ذايبة', 'بتنحط والقطعة لسا عم تطقطق.'] },
+  { en: ['Double Up', 'One patty is a snack. Two is a Big Truck.'], ar: ['دبّلها', 'قطعة وحدة سناك.. قطعتين يعني بيغ تراك.'] },
+  { en: ['More Cheese', 'Because the first slice was lonely.'], ar: ['كمان جبنة', 'لأن الشريحة الأولى كانت لحالها.'] },
+  { en: ['Tomato', 'Thick-cut, juicy, ripe red.'], ar: ['بندورة', 'شرايح سميكة، حمرا ومليانة عصير.'] },
+  { en: ['Red Onion', 'A sharp little bite to cut the richness.'], ar: ['بصل أحمر', 'لذعة خفيفة بتكسر الدسم.'] },
+  { en: ['Pickles', 'Tangy crunch in every corner.'], ar: ['مخلل', 'قرمشة حامضة بكل زاوية.'] },
+  { en: ['House Sauce', 'The drip that makes you reach for napkins.'], ar: ['صوص البيت', 'الصوص يلي بيخليك تدوّر عالمحارم.'] },
+  { en: ['Sesame Crown', 'Close it up. STOP... it’s Burger Time.'], ar: ['تاج السمسم', 'سكّرها... STOP، هلق وقت البرغر.'] },
+];
+
+// `verified: true` = item seen in public sources. Others are sensible
+// placeholders for the owner to replace with the real menu (no prices shown
+// because none are published).
+export const MENU = {
+  burgers: [
+    { verified: true, icon: 'mushroom', en: ['Double Swiss Mushroom', 'Two smashed patties, melted Swiss, sautéed mushrooms. The bomb.'], ar: ['دبل سويس مشروم', 'قطعتين لحم، جبنة سويسرية ذايبة وفطر سوتيه. قنبلة.'] },
+    { verified: false, icon: 'burger', en: ['Big Truck Classic', 'Beef, cheddar, lettuce, tomato, pickles, house sauce.'], ar: ['بيغ تراك كلاسيك', 'لحم، شيدر، خس، بندورة، مخلل وصوص البيت.'] },
+    { verified: false, icon: 'fire', en: ['Smoky BBQ', 'Beef, cheddar, crispy onions and smoky barbecue glaze.'], ar: ['سموكي باربكيو', 'لحم، شيدر، بصل مقرمش وصوص باربكيو مدخن.'] },
+  ],
+  chicken: [
+    { verified: true, icon: 'leaf', en: ['Pesto Chicken', 'Grilled chicken, basil pesto and fresh greens. The lighter ride.'], ar: ['تشيكن بيستو', 'دجاج مشوي، بيستو ريحان وخضار طازجة. الخيار الأخف.'] },
+    { verified: true, icon: 'tender', en: ['Boneless Tenders', 'Golden, crunchy, juicy strips with dipping sauce.'], ar: ['تندرز بدون عظم', 'أصابع دجاج ذهبية مقرمشة مع صوص.'] },
+    { verified: false, icon: 'chicken', en: ['Crispy Chicken Burger', 'Fried chicken breast, slaw, pickles and spicy mayo.'], ar: ['برغر دجاج كرسبي', 'صدر دجاج مقلي، كول سلو، مخلل ومايونيز حار.'] },
+  ],
+  starters: [
+    { verified: true, icon: 'rings', en: ['Crispy Onion Rings', 'Thick-cut, beer-batter style crunch.'], ar: ['حلقات بصل مقرمشة', 'حلقات سميكة ومقرمشة لآخر لقمة.'] },
+    { verified: true, icon: 'cheese', en: ['Mozzarella Sticks', 'The stretchiest pull in Damascus.'], ar: ['أصابع موزاريلا', 'أطول مطّة جبنة بالشام.'] },
+    { verified: false, icon: 'fries', en: ['Loaded Fries', 'Fries buried in cheese sauce and toppings.'], ar: ['بطاطا محمّلة', 'بطاطا غرقانة بصوص الجبنة والإضافات.'] },
+  ],
+};
+
+export const BRANCHES = [
+  {
+    en: { name: 'Mroush Square', addr: 'Talaat Amriyat Al-Tayaran, opposite the UAE Embassy, Damascus' },
+    ar: { name: 'ساحة المروش', addr: 'طلعة أمرية الطيران، مقابل سفارة الإمارات، دمشق' },
+    map: 'UAE Embassy Damascus Mezzeh',
+  },
+  {
+    en: { name: 'Abu Rumaneh', addr: 'Jadet Al-Hassan, Abu Rumaneh, Damascus' },
+    ar: { name: 'أبو رمانة', addr: 'جادة الحسن، أبو رمانة، دمشق' },
+    map: 'Abu Rumaneh Damascus',
+  },
+];
+
+export const I18N = {
+  en: {
+    'nav.build': 'The Build',
+    'nav.menu': 'Menu',
+    'nav.visit': 'Visit',
+    'nav.order': 'Order Now',
+    'loader': 'Firing up the grill...',
+    'hero.kicker': 'Premium Quality · Damascus',
+    'hero.line1': 'Stop<span class="dots">...</span>',
+    'hero.line2': 'It’s Burger',
+    'hero.line3': 'Time',
+    'hero.sub': 'Fire-grilled, double-stacked, dripping burgers built like the truck on our logo: big, loud and unstoppable.',
+    'hero.cta1': 'See the Menu',
+    'hero.cta2': 'Watch it Build',
+    'hero.scroll': 'Scroll',
+    'marquee': ['Premium Quality', 'Stop... It’s Burger Time', 'Smashed on Fire', 'Damascus', 'Come Hungry', 'Leave Stuffed'],
+    'build.kicker': 'Layer by layer',
+    'build.title': 'Anatomy of a Big Truck',
+    'build.done': 'Loaded. Ready to roll.',
+    'road.title': 'Fueled by fire.<br/>Driven by flavor.',
+    'road.text': 'We started with one idea: burgers big enough to need a truck. Every patty is smashed to order, every bun toasted, every order built by hand.',
+    'stat.followers': 'Instagram family',
+    'stat.posts': 'Posts of pure hunger',
+    'stat.hours': 'Hours on the grill daily',
+    'stat.branches': 'Branches in Damascus',
+    'menu.kicker': 'The Menu',
+    'menu.title': 'Pick your load',
+    'menu.burgers': 'Burgers',
+    'menu.chicken': 'Chicken',
+    'menu.starters': 'Starters',
+    'menu.fav': 'Crowd favorite',
+    'menu.note': 'Full menu & prices in store, on BeeOrder, or by phone.',
+    'visit.kicker': 'Pull over',
+    'visit.title': 'Find the truck',
+    'visit.hours': 'Open daily · 2 PM – 12 AM',
+    'visit.directions': 'Directions',
+    'visit.map': 'Show map',
+    'visit.call': 'Call to order',
+    'visit.bee': 'Delivery on BeeOrder',
+    'cta.title': 'Hungry yet?',
+    'cta.text': 'Call it in, order on BeeOrder, or slide into our DMs.',
+    'cta.follow': 'Follow @bigtruckburger',
+    'footer.rights': 'Big Truck Burger · Damascus, Syria',
+  },
+  ar: {
+    'nav.build': 'التركيبة',
+    'nav.menu': 'المنيو',
+    'nav.visit': 'زورونا',
+    'nav.order': 'اطلب هلق',
+    'loader': 'عم نشعّل الشواية...',
+    'hero.kicker': 'جودة ممتازة · دمشق',
+    'hero.line1': 'STOP<span class="dots">...</span>',
+    'hero.line2': 'هلق وقت',
+    'hero.line3': 'البرغر',
+    'hero.sub': 'برغر مشوي عالنار، طبقتين لحم، وجبنة عم تنقط.. معمول متل الشاحنة يلي عاللوغو: كبير، قوي وما حدا بيوقفو.',
+    'hero.cta1': 'شوف المنيو',
+    'hero.cta2': 'شوفها كيف تنبنى',
+    'hero.scroll': 'انزل',
+    'marquee': ['جودة ممتازة', 'STOP... هلق وقت البرغر', 'مشوي عالنار', 'دمشق', 'تعا جوعان', 'وفل شبعان'],
+    'build.kicker': 'طبقة ورا طبقة',
+    'build.title': 'تشريح البيغ تراك',
+    'build.done': 'انحمّلت. جاهزة تمشي.',
+    'road.title': 'وقودنا النار.<br/>وطريقنا الطعمة.',
+    'road.text': 'بلشنا بفكرة وحدة: برغر كبير لدرجة بدو شاحنة. كل قطعة لحم بتنكبس عالطلب، كل خبزة بتتحمّص، وكل طلب بينبنى باليد.',
+    'stat.followers': 'عيلتنا عالإنستغرام',
+    'stat.posts': 'منشور من الجوع',
+    'stat.hours': 'ساعات عالشواية يومياً',
+    'stat.branches': 'فروع بدمشق',
+    'menu.kicker': 'المنيو',
+    'menu.title': 'اختار حمولتك',
+    'menu.burgers': 'برغر',
+    'menu.chicken': 'دجاج',
+    'menu.starters': 'مقبلات',
+    'menu.fav': 'الأكثر طلباً',
+    'menu.note': 'المنيو الكامل والأسعار بالمحل، على BeeOrder أو عالتلفون.',
+    'visit.kicker': 'صفّ عالجنب',
+    'visit.title': 'لاقي الشاحنة',
+    'visit.hours': 'مفتوح يومياً · ٢ الظهر – ١٢ بالليل',
+    'visit.directions': 'الاتجاهات',
+    'visit.map': 'اعرض الخريطة',
+    'visit.call': 'اتصل واطلب',
+    'visit.bee': 'توصيل عبر BeeOrder',
+    'cta.title': 'جعت ولا لسا؟',
+    'cta.text': 'اتصل فينا، اطلب عـ BeeOrder، أو ابعتلنا عالخاص.',
+    'cta.follow': 'تابعنا @bigtruckburger',
+    'footer.rights': 'بيغ تراك برغر · دمشق، سوريا',
+  },
+};
